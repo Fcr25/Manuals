@@ -1,0 +1,60 @@
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+button {
+  padding: 1em 1.5em;
+  cursor: pointer;
+}
+
+.border {
+  border: 5px solid lightgreen;
+}
+
+.hidden {
+  display: none;
+}
+
+img {
+  margin: 1rem;
+}
+
+details {
+  width: 900px;
+  border: 1px solid #eee;
+  cursor: pointer;
+}
+
+summary {
+  padding: .5em;
+  border: 1px solid #ddd;
+  background: #eee;
+  list-style: none;
+}
+
+summary::marker {
+  display: none;
+}
+summary::-webkit-details-marker {
+  display : none;
+}
+summary::after {
+  display    : block;
+  float      : right;
+  content    : '\1405';
+  cursor     : pointer;
+  transition : 180ms;
+  transform  : rotate(90deg);
+  }
+details[open] > summary:after {
+  transform  : rotate(-90deg);
+  }
+summary:hover {
+  outline          : none;
+  background-color : whitesmoke;
+  }
