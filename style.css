@@ -1,10 +1,8 @@
-
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
 }
 
 button {
@@ -30,8 +28,12 @@ details {
   cursor: pointer;
 }
 
+details:active {
+  background-color: aquamarine;
+}
+
 summary {
-  padding: .5em;
+  padding: 0.5em;
   border: 1px solid #ddd;
   background: #eee;
   list-style: none;
@@ -41,20 +43,20 @@ summary::marker {
   display: none;
 }
 summary::-webkit-details-marker {
-  display : none;
+  display: none;
 }
 summary::after {
-  display    : block;
-  float      : right;
-  content    : '\1405';
-  cursor     : pointer;
-  transition : 180ms;
-  transform  : rotate(90deg);
-  }
+  display: block;
+  float: right;
+  content: '\1405';
+  cursor: pointer;
+  transition: 180ms;
+  transform: rotate(90deg);
+}
 details[open] > summary:after {
-  transform  : rotate(-90deg);
-  }
+  transform: rotate(-90deg);
+}
 summary:hover {
-  outline          : none;
-  background-color : whitesmoke;
-  }
+  outline: none;
+  background-color: whitesmoke;
+}
