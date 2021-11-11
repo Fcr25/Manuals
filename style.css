@@ -28,10 +28,6 @@ details {
   cursor: pointer;
 }
 
-details:active {
-  background-color: aquamarine;
-}
-
 summary {
   padding: 0.5em;
   border: 1px solid #ddd;
@@ -59,4 +55,7 @@ details[open] > summary:after {
 summary:hover {
   outline: none;
   background-color: whitesmoke;
+}
+summary:focus {
+  background: brown;
 }
